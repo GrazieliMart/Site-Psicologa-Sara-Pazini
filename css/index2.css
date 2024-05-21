@@ -1,0 +1,269 @@
+.wrapper1 {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura da tela inteira */
+}
+.container1 {
+    display: flex; /* Define o contêiner como flexível */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* Margem entre as divs */
+    background-color: #ccc;
+}
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000; /* Aumenta o z-index para garantir que esteja acima de tudo */
+  }
+  
+  .whatsapp-icon a {
+      display: block;
+      background-color: #25d366; /* Cor de fundo do ícone de WhatsApp */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; /* Para criar o formato de círculo */
+      text-align: center;
+      transition: 0.3s;
+      line-height: 100px; /* Centraliza o ícone verticalmente */
+  }
+  
+    .whatsapp-icon a:hover i {
+      color: #25d366; /* Cor verde desejada */
+  }
+  
+    
+   
+    
+  
+  .whatsapp-icon i {
+      color: #fff;
+      font-size: 54px;
+      transition: 0.3s;
+  }
+  .whatsapp-icon i:hover {
+      color: #25d366;
+      transition: 0.3s;
+  
+  }
+  .whatsapp-icon a:hover{
+      background-color: #fff;
+      color: #25d366; 
+      transition: 0.3s;
+      transform: scale(1.1);
+  }
+  .container2 {
+    display: flex;
+    margin-top: -15%;
+    position: relative;
+    z-index: 3;
+    justify-content: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    color: #413c3c;
+    text-align: center;
+    border-radius: 50px;
+      opacity: 0; /* Começa invisível */
+     transform: translateY(50px); /* Ajuste a posição inicial fora da tela */
+     transition: transform 0.2s ease, filter 0.2s ease, opacity 0.5s ease, transform 0.5s ease;}
+.box p{
+    padding: 10px;}
+.box.show {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Reseta a posição */
+}
+
+.box img{
+    height: 110px;
+    margin-top: -50px;
+}
+.box h1{
+    font-size: 25px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+.box:hover {
+    transform: scale(1.1);
+}
+
+.container2:hover .box:not(:hover) {
+    filter: blur(3px);
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0; /* Opacidade inicial 0 */
+        transform: translateY(50px); /* Deslocamento inicial */
+    }
+    to {
+        opacity: 1; /* Opacidade final 1 */
+        transform: translateY(0); /* Deslocamento final */
+    }
+}
+
+.footer-left img {
+    width: 300px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+.footer-right {
+   
+    margin-left: 150px;
+    text-align: left;
+}
+.container3 {
+    display: flex;
+}
+
+.inner-box {
+    flex: 1;
+    background-color: #4c484e;
+    text-align: center;
+    padding: 2px;
+    color: #9E96A2;
+    margin: 0;
+}
+.container3 i{
+    font-weight: bold;
+}
+
+.inner-box1 {
+    flex: 1;
+    color: #9E96A2;
+    background-color: #333;
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+.left-content, .right-content {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.left-content {
+    flex-direction: column;
+}
+
+.left-content h1 {
+    margin: 0;
+    font-size: 45px;
+}
+#logogreen{
+    height: 100px;
+}
+.left-content p {
+    margin: 10px 0;
+}
+
+.left-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.right-content img {
+    width: 600px;
+    height: auto;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+.parallax1 {
+    margin-top: -255px;
+    background-image: url('../assets/scroll\ \(2\).jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.parallax3 {
+    background-image: url('../assets/marmore.png');
+}
+
+
+.content {
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content h1, .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 55px;
+}
+
+.content p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.contact-info img{
+    width: 150px;
+    height: 150px;
+}
+.button {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: #151515;
+    color: #eee;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .button-span {
+    color: #aaa;
+  }
+  
