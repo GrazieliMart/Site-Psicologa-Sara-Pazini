@@ -74,8 +74,7 @@
       opacity: 0; /* Começa invisível */
      transform: translateY(50px); /* Ajuste a posição inicial fora da tela */
      transition: transform 0.2s ease, filter 0.2s ease, opacity 0.5s ease, transform 0.5s ease;}
-.box p{
-    padding: 10px;}
+
 .box.show {
     opacity: 1; /* Torna visível */
     transform: translateY(0); /* Reseta a posição */
@@ -92,7 +91,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #000;
     color: white;
     padding: 20px;
 }
@@ -163,22 +162,32 @@ footer {
     display: flex;
     width: 100%;
     height: 100%;
-    margin-top: 100px;
+    margin-top: -60px;
     position: absolute;
     top: 0;
-    left: 0;
-   
+    left: 0;z-index: 2
 }
 
 .left-content, .right-content {
-    
+    flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
+   
     padding: 20px;
 }
-
+.textterapia{
+    text-align: left;
+    justify-content: left;
+    width: 500px;
+    margin-left: -80px;
+    color: #fff;
+    
+}
+.textterapia p{
+    font-size: 25px;
+}
 .left-content {
+    
     flex-direction: column;
 }
 
@@ -200,7 +209,7 @@ footer {
 }
 
 .right-content img {
-    width: 600px;
+    width: 650px;
     height: auto;
 }
 
@@ -210,39 +219,33 @@ footer {
 }
 .parallax1 {
     margin-top: -255px;
-    background-image: url('../assets/scroll\ \(2\).jpg');
+    background-image: url(../assets/back\ \(1\).png);
     display: flex;
+    height: 900px;
+    margin-bottom: -250px;
     align-items: center;
     justify-content: center;
 }
 
 
-
 .parallax3 {
-    background-image: url('../assets/marmore.png');
+     height: 1200px; 
+    margin-bottom: -250px;
+    background-image: url(../assets/back\ \(1\).png);
+    margin-top: -320px;
 }
 
-
 .content {
-    height: 100vh;
-    background-color: #282828;
-    display: flex;
+    
+    background-color: #b3cbb5;
+  
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.content h1, .content h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 55px;
-}
 
-.content p {
-    font-size: 20px;
-    max-width: 600px;
-    line-height: 1.6;
-}
+
 .contact-info img{
     width: 150px;
     height: 150px;
@@ -266,4 +269,25 @@ footer {
   .button-span {
     color: #aaa;
   }
-  
+  .boxes-container {
+    display: grid;
+    background-color: #b3cbb5;
+    justify-content: center;
+}
+.single-box {
+    /* flex: 1; */
+    height: 300px;
+    background-color: #f0f0f0;
+    /* margin: 0 5px; */
+}
+
+.agendamentos {
+    background-color: #b3cbb5;
+    padding: 100px;
+    DISPLAY: flex;
+    JUSTIFY-CONTENT: center;
+}
+.topicos{
+    display: flex;
+    width: 100%;
+}
