@@ -769,6 +769,9 @@ color: white; /* Cor branca para o ícone */
   transition: 0.2s;
 
 }
+#questionimg{
+height: 400px;
+}
 .btnbox{
   display: flex;
   justify-content: left;
